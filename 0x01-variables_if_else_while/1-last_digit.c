@@ -21,7 +21,7 @@ int main(void)
 	last = n % 10;
 
 	/* This helps get the magnitude */
-	// last = last < 0 ? -last : last;
+	/* last = last < 0 ? -last : last; */
 
 	printf("Last digit of %d is %d ", n, last);
 
