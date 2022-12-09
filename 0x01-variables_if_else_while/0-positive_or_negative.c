@@ -4,8 +4,7 @@
 
 /**
  * main - Entry point
- *
- * Description: Returns 0 at the end
+ * Returns: 0 at the end
  */
 
 int main(void)
