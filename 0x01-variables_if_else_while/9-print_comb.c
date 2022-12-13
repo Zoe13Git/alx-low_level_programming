@@ -1,7 +1,7 @@
 #include <stdio.h>
 /**
  * main - Entry point
- * Write a program that prints all possible 
+ * Write a program that prints all possible
  * combinations of single-digit numbers.
  * - Numbers must be separated by , followed by a space
  * - Numbers should be printed in ascending order
