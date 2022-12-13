@@ -1,8 +1,9 @@
 #include <stdio.h>
 /**
  * main - Entry point
- * Write a program that prints all possible combinations of single-digit numbers.
- * - Numbers must be separated by ,, followed by a space
+ * Write a program that prints all possible 
+ * combinations of single-digit numbers.
+ * - Numbers must be separated by , followed by a space
  * - Numbers should be printed in ascending order
  * - You can only use the putchar function (every other
  * function (printf, puts, etc…) is forbidden)
@@ -19,7 +20,7 @@ int main(void)
 	for (ch = 48 ; ch <= 57 ; ch++)
 	{
 		putchar(ch);
-		if(ch == 57) 
+		if (ch == 57)
 			continue;
 		putchar(',');
 		putchar(' ');
