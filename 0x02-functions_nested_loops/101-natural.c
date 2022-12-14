@@ -17,4 +17,6 @@ int main(void)
 			sum_3_n_5 += i;
 	}
 	printf("%d\n", sum_3_n_5);
+	
+	return (0);
 }
