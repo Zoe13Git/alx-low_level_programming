@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * jack_bauer - Prints every minte of the day 
+ * jack_bauer - Prints every minte of the day
  * from 00:00 to 23:59.
  * Return: Always 0 (success).
  */
@@ -11,6 +11,7 @@ void jack_bauer(void)
 	int j;
 	int l;
 	int m;
+
 	for (i = 0; i <= 2; i++)
 	{
 		for (j = 0; j <= 9; j++)
