@@ -22,6 +22,7 @@ int main(void)
 		fib2 = fib1 + temp;
 	}
 
-	printf("%d\n", sum);
+	printf("%ld\n", sum);
+	
 	return (0);
 }
