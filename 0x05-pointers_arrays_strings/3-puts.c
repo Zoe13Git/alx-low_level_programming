@@ -9,6 +9,6 @@ void _puts(char *str)
 	int c = 0;
 
 	while (*(str + c))
-		_putchar(*(str + c++));
-	_putchar('\n');
+		putchar(*(str + c++));
+	putchar('\n');
 }
