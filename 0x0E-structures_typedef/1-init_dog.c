@@ -8,6 +8,7 @@
  * @owner: dog owner to init with
  * Return: Always 0 (success)
  */
+
 void init_dog(struct dog *d, char *name, float age, char *owner)
 {
 	d->name = name;
