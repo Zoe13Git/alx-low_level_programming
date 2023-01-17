@@ -12,7 +12,7 @@ struct dog
 	char *name;
 	float age;
 	char *owner;
-};
+} dog_t;
 
 /* Additional Function Prototypes */
 void init_dog(struct dog *d, char *name, float age, char *owner);
