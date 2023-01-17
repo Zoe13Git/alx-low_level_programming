@@ -17,8 +17,10 @@ dog_t *new_dog(char *name, float age, char *owner)
 	name_len = own_len = 0;
 
 	/* transversing the memory their lenth */
-	while(name[name_len++]);
-	while(owner[own_len++]);
+	while (name[name_len++])
+		;
+	while (owner[own_len++])
+		;
 
 	if (d == NULL)
 		return (NULL);
