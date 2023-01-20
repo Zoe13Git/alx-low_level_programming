@@ -11,7 +11,6 @@ void print_all(const char *format, ...)
 {
 	va_list ap;
 	int i = 0;
-	int valid_num = 0;
 
 	va_start (ap, format);
 
