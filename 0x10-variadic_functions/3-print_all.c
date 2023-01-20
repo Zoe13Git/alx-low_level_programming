@@ -14,33 +14,21 @@ void print_all(const char *format, ...)
 	int valid_num = 0;
 
 	va_start (ap, format);
-	
-	while(format)
-	{
-		switch(format[i++])
-		{
-			case 'c':
-			case 'i':
-			case 'f':
-			case 's':
-				valid_num++;
-			default: continue;
-		}
-	}
-	printf("Valid Count = %d", valid_num);
 
-	i = 0;
-	while(format)
+	while (format)
 	{
-		switch(format[i++])
+		switch (format[i++])
 		{
-		case 'c': printf("%c ", va_arg(ap, int));
+		case 'c':
+			printf("%c ", va_arg(ap, int));
 			break;
-		case 'i': printf("%d ", va_arg(ap, int));
+		case 'i':
+			printf("%d ", va_arg(ap, int));
 			break;
-		case 'f': printf("%f ", va_arg(ap, double));
+		case 'f':
+			printf("%f ", va_arg(ap, double));
 			break;
-		case 's': 
+		case 's':
 			{
 				char *str = va_arg(ap, char*);
 
@@ -50,7 +38,7 @@ void print_all(const char *format, ...)
 					printf("(nil)");
 				break;
 			}
-		default: 
+		default:
 			continue;
 
 		}
