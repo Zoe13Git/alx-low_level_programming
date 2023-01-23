@@ -8,7 +8,7 @@
  * any other char should be ignored
  * Return: 0 success
  */
-void print_all(const char *format, ...)
+void print_all(const char * const format, ...)
 {
 	va_list ap;
 	int i;
