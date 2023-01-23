@@ -1,6 +1,7 @@
 #include <stdarg.h>
 #include <stdio.h>
 
+
 /**
  * print_all - prints all args in a variadic function
  * @format: c: char, i: integer, f: float, s: char *
@@ -10,14 +11,16 @@
 void print_all(const char *format, ...)
 {
 	va_list ap;
-	int i = 0;
+	int i;
 
 	if (!format)
 		return;
 
 	va_start(ap, format);
 
-	while (format)
+	i = 0;
+
+	while (format[i])
 	{
 		switch (format[i++])
 		{
@@ -45,4 +48,5 @@ void print_all(const char *format, ...)
 
 		}
 	}
+	printf("\n");
 }
