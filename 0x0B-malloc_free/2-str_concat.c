@@ -11,13 +11,16 @@ char *str_concat(char *s1, char *s2)
 	char *str;
 	int len1 = 0, len2 = 0, i = 0;
 
-	if (!s1 || !s2)
-	{
-	}
-	else
+	if (!s1 && !s2)
+		return ("");
+
+	if (s1)
 	{
 		while (s1[i++])
 			len1++;
+	}
+	if (s2)
+	{
 		i = 0;
 		while (s2[i++])
 			len2++;
