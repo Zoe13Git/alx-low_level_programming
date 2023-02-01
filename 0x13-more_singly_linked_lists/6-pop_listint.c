@@ -18,6 +18,7 @@ int pop_listint(listint_t **head)
 	if (!tmp->next)
 	{
 		free(*head);
+		free(tmp);
 	}
 	else
 	{
