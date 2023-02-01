@@ -10,11 +10,11 @@ int pop_listint(listint_t **head)
 	listint_t *tmp;
 	int n;
 
-	tmp = *head;
-	if (!tmp)
+	if (!(*head))
 		return (0);
 
-	n = tmp->n;
+	tmp = *head;
+	n = (*head)->n;
 	if (!tmp->next)
 	{
 		free(*head);
@@ -24,7 +24,6 @@ int pop_listint(listint_t **head)
 		tmp = tmp->next;
 		free(*head);
 		*head = tmp;
-		/* free(tmp); */
 	}
 	return (n);
 }
