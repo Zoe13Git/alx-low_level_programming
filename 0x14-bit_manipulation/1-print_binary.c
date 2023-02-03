@@ -1,6 +1,6 @@
 #include "main.h"
 
-/*
+/**
  * print_binary - prints the binary representation of a
  * number - without the use of % and / operators or malloc
  * @n: decimal number
