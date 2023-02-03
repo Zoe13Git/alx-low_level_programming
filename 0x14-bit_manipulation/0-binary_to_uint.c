@@ -24,7 +24,8 @@ unsigned int binary_to_uint(const char *b)
 		int_b = b[i] - '0';
 		/*
 		 * If you need to raise 2 to a power.
-		 * The fastest way to do so is to bit shift by the power.
+		 * The fastest way to do so is to
+		 * bit shift by the power.
 		 * 2 pow 3 => 1 << 3 == 8
 		 * 2 pow 7 => 1 << 7 == 128
 		 */
