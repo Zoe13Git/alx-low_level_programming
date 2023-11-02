@@ -1,6 +1,6 @@
 #include <stdlib.h>
 /**
- * malloc_checked
+ * malloc_checked - allocate mem using malloc
  * @b: integer
  * Return: pointer to the allocated memory
  */
