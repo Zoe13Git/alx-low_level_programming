@@ -15,7 +15,7 @@ void *_memset(void *s, int c, unsigned int len)
 	while (len--)
 		*p = (unsigned char)c;
 
-	return (s);
+	return (p);
 }
 
 /**
