@@ -1,45 +1,40 @@
 #include <stdlib.h>
 
-
 /**
- * _memset - memset
- * @s: pointer to string
- * @c: integer
- * @len: length of string
- * Return: void
+ * _memset - mem
+ * @s: string
+ * @b: character
+ * @len: len of str
+ * Return: void pointer
  */
-void *_memset(void *s, int c, unsigned int len)
+char *_memset(char *s, char b, unsigned int len)
 {
-	unsigned char *p = s;
+	char *ptr = s;
 
 	while (len--)
-		*p = (unsigned char)c;
+		*ptr++ = b;
 
-	return (p);
+	return (ptr);
 }
 
 /**
- * _calloc - allocates memory for an array
- * @nmemb: number of elements
- * @size: size of each element to be allocated
+ * _calloc - allocated memory for an array using malloc
+ * @nmemb: no of arr elements
+ * @size: size of each byte
  * Return: void pointer
  */
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
-	void *ptr;
+	void *m;
 
-	if (nmemb == 0 || size == 0)
+	if (size == 0 || nmemb == 0)
+		return (NULL);
+	m = malloc(sizeof(int) * nmemb);
+
+	if (m == 0)
 		return (NULL);
 
-	if (nmemb != 0 && (nmemb * size) / nmemb != size)
-		return (NULL);
+	_memset(m, 0, sizeof(int) * nmemb);
 
-	ptr = malloc(size * nmemb);
-
-	if (!ptr)
-		return (NULL);
-
-	_memset(ptr, 0, size * nmemb);
-
-	return (ptr);
+	return (m);
 }
