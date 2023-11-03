@@ -22,7 +22,7 @@ void *_memset(void *s, int c, unsigned int len)
  * _calloc - allocates memory for an array
  * @nmemb: number of elements
  * @size: size of each element to be allocated
- * Return: void
+ * Return: void pointer
  */
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
@@ -36,8 +36,10 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 
 	ptr = malloc(size * nmemb);
 
-	if (ptr)
-		_memset(ptr, 0, size * nmemb);
+	if (!ptr)
+		return (NULL);
+
+	_memset(ptr, 0, size * nmemb);
 
 	return (ptr);
 }
