@@ -1,25 +1,5 @@
 #include <stdio.h>
 
-int _atoi(char *s);
-
-/**
- * main - multiply 2 numbers
- * @argc: number of arguments
- * @argv: array of arguments passed
- * Return: 1 on success
- */
-int main(int argc, char *argv[])
-{
-	if (argc < 3)
-	{
-		printf("Erorr\n");
-		return (1);
-	}
-	else
-		printf("%d\n", _atoi(argv[1]) * _atoi(argv[2]));
-	return (0);
-}
-
 /**
  * _atoi - converts a string int to int
  * @s: string int
@@ -43,4 +23,23 @@ int _atoi(char *s)
 	}
 
 	return (res * sign);
+}
+/**
+ * main - multiply 2 numbers
+ * @argc: number of arguments
+ * @argv: array of arguments passed
+ * Return: 1 on success
+ */
+int main(int argc, char *argv[])
+{
+	if (argc < 3)
+	{
+		printf("Erorr\n");
+		return (1);
+	}
+	else
+	{
+		printf("%d\n", _atoi(argv[1]) * _atoi(argv[2]));
+	}
+	return (0);
 }
