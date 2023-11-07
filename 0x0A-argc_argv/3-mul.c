@@ -32,14 +32,13 @@ int _atoi(char *s)
  */
 int main(int argc, char *argv[])
 {
-	if (argc < 3)
-	{
-		printf("Erorr\n");
-		return (1);
-	}
-	else
+	if (argc == 3)
 	{
 		printf("%d\n", _atoi(argv[1]) * _atoi(argv[2]));
+		return (0);
 	}
-	return (0);
+	else
+		printf("Error\n");
+
+	return (1);
 }
