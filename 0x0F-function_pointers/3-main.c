@@ -15,7 +15,7 @@ int main(int argc, char *argv[])
 
 	if (argc != 4)
 	{
-		printf("Error 98\n");
+		printf("Error\n");
 		exit(98);
 	}
 
@@ -24,18 +24,17 @@ int main(int argc, char *argv[])
 	op = argv[2];
 	if (num2 == 0 && (strcmp(op, "/") == 0 || strcmp(op, "%") == 0))
 	{
-		printf("Error 100\n");
+		printf("Error\n");
 		exit(100);
 	}
-
 	op_func = get_op_func(op);
-	if (op_func)
+	if (op_func != NULL)
 	{
 		printf("%d\n", op_func(num1, num2));
 	}
 	else
 	{
-		printf("Error 99\n");
+		printf("Error\n");
 		exit(99);
 	}
 
